@@ -1,0 +1,7 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Dj_Rj::mod9" title="Mod9" module="Dj_Rj" sortOrder="100" resource="Dj_Rj::mod9"/>
+
+        <add id="Dj_Rj::mod9_sub" title="Submenu" module="Dj_Rj" parent="Dj_Rj::mod9" sortOrder="10" action="mod2/config/index" resource="Dj_Rj::mod9_sub"/>
+    </menu>
+</config>

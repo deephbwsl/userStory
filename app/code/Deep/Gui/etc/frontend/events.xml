@@ -1,0 +1,19 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+
+    <event name="catalog_controller_product_view">
+        <observer name="log_product_name" instance="Deep\Gui\Observer\LogProductName"/>
+    </event>
+
+    <event name="controller_action_postdispatch">
+        <observer name="log_page_html" instance="Deep\Gui\Observer\LogPageHtml" />
+    </event>
+
+    <event name="controller_front_send_response_before">
+        <observer name="yourmodule_log_routers" instance="Deep\Gui\Observer\LogRouters" />
+    </event>
+
+    <event name="controller_action_predispatch">
+        <observer name="yourmodule_redirect_404" instance="Deep\Gui\Observer\Redirect404" />
+    </event>
+    
+</config>

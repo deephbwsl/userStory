@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <referenceContainer name="content">
+        <block class="Deep\Gui\Block\Display" name="Hello" template="Deep_Gui::Hello.phtml" />        
+    </referenceContainer>
+</config>

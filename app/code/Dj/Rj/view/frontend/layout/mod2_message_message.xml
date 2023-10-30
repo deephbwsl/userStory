@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <head>
+        <title>
+            Something else
+        </title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Dj\Rj\Block\Message\Message" name="Mesasage" template="Dj_Rj::message.phtml" />        
+        </referenceContainer>
+    
+    </body>
+
+      
+</config>

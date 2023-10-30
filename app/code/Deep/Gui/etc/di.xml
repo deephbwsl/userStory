@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="product_sale_plugin" type="Deep\Gui\Plugin\ProductSalePlugin" sortOrder="10" disabled="false"/>
+    </type>
+
+    <type name="Magento\Theme\Block\Html\Footer">
+        <plugin name="copy_right_plugin" type="Deep\Gui\Plugin\CopyRightPlugin" sortOrder="10" disabled="false"/>
+    </type>
+
+    <type name="Magento\Theme\Block\Html\Breadcrumbs">
+        <plugin name="Bread_crumb_Plugin" type="Deep\Gui\Plugin\BreadcrumbPlugin" sortOrder="10" disabled="false"/>
+    </type>
+
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="Gui_reviews_plugin" type="Deep\Gui\Plugin\ReviewsPlugin" sortOrder="10" disabled="false"/>
+    </type>
+
+    <type name="Magento\Catalog\Block\Product\View\Description">
+        <plugin name="Description_plugin" type="Deep\Gui\Plugin\DescriptionPlugin" sortOrder="10" disabled="false"/>
+    </type>
+
+
+    
+</config>
+
